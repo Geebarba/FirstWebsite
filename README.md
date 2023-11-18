@@ -1,2 +1,2 @@
 # FirstWebsite
-First attempt and building an functioning website
+First attempt and building a functioning website

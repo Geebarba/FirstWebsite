@@ -1,0 +1,157 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  margin-top: 2vw;
+  background: rgba(248, 248, 255, 0.541);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'Moirai One';
+  font-size: 16vw;
+  color: white;
+  text-shadow:
+    7px 7px 5px #ffa2bcff,
+    -7px 7px 5px #ffff7bff,
+    -7px -7px 5px #73d3ebff,
+    7px -7px 5px #ffff7bff;
+  animation: glow_movement--text 3s linear infinite;
+}
+
+@keyframes glow_movement--text {
+  25%{
+    text-shadow:
+    7px 7px 5px #91fa9cff,
+    -7px 7px 5px #ffa2bcff,
+    -7px -7px 5px #ffff7bff,
+    7px -7px 5px #73d3ebff;
+  }
+  50%{
+    text-shadow:
+    7px 7px 5px #73d3ebff,
+    -7px 7px 5px #91fa9cff,
+    -7px -7px 5px #ffa2bcff,
+    7px -7px 5px #ffff7bff;
+  }
+  75%{
+    text-shadow:
+    7px 7px 5px #ffff7bff,
+    -7px 7px 5px #73d3ebff,
+    -7px -7px 5px #91fa9cff,
+    7px -7px 5px #ffa2bcff;
+  }
+  100%{
+    text-shadow:
+    7px 7px 5px #ffa2bcff,
+    -7px 7px 5px #ffff7bff,
+    -7px -7px 5px #73d3ebff,
+    7px -7px 5px #91fa9cff;
+  }
+}
+
+.start_button {
+  width: 15vw;
+  height: 5vw;
+  font-size: 2.5vw;
+  border-radius: 25px;
+  background-color: #ffff7bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+  7px 7px 5px #ffa2bcff,
+  -7px 7px 5px #ffff7bff,
+  -7px -7px 5px #73d3ebff,
+  7px -7px 5px #91fa9cff;
+  animation: glow_movement 3s linear infinite;
+}
+
+@keyframes glow_movement {
+  25%{
+    box-shadow:
+    7px 7px 5px #91fa9cff,
+    -7px 7px 5px #ffa2bcff,
+    -7px -7px 5px #ffff7bff,
+    7px -7px 5px #73d3ebff;
+  }
+  50%{
+    box-shadow:
+    7px 7px 5px #73d3ebff,
+    -7px 7px 5px #91fa9cff,
+    -7px -7px 5px #ffa2bcff,
+    7px -7px 5px #ffff7bff;
+  }
+  75%{
+    box-shadow:
+    7px 7px 5px #ffff7bff,
+    -7px 7px 5px #73d3ebff,
+    -7px -7px 5px #91fa9cff,
+    7px -7px 5px #ffa2bcff;
+  }
+  100%{
+    box-shadow:
+    7px 7px 5px #ffa2bcff,
+    -7px 7px 5px #ffff7bff,
+    -7px -7px 5px #73d3ebff,
+    7px -7px 5px #91fa9cff;
+  }
+}
+
+.whale {
+  position: fixed;
+  z-index: -1;
+  width: 10em;
+  right: -50vw;
+}
+
+.whale-yellow {
+  top: 40vh;
+  animation: whale_movement 20s ease-in-out infinite;
+}
+
+.whale-blue {
+  top: 70vh;
+  animation: whale_movement 20s ease-in-out 4s infinite;
+}
+
+@keyframes whale_movement {
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(10deg);
+  }
+  50% {
+    right: 100vw;
+  }
+
+  60% {
+    transform: rotate(-10deg) scaleX(-1);
+  }
+  70% {
+    transform: rotate(10deg) scaleX(-1);
+  }
+  80% {
+    transform: rotate(-10deg) scaleX(-1);
+  }
+  90% {
+    transform: rotate(10deg) scaleX(-1);
+  }
+  100% {
+    transform: scaleX(-1);
+    right: -50vw;
+  }
+}

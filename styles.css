@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cherry Bomb One';
+}
+
+body {
+  background: url(images/background1.png) #a0e8fcff no-repeat fixed;
+  background-size: auto 100%;
+}
+
+.header {
+  display: grid;
+  grid-template: 1fr / 18vw 2fr 3fr;
+  align-items: center;
+}
+
+.nav_bar {
+  background-color: rgba(248, 248, 255, 0.541);
+  border-radius: 25px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2vw;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: rgb(54, 54, 54);
+}
+
+.logo {
+  width: 18vw;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  color: rgb(54, 54, 54);
+}
