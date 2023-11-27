@@ -5,7 +5,7 @@
 }
 
 body {
-  background: url(images/background1.png) #a0e8fcff no-repeat fixed;
+  background: url(images/background1.png) #a0e8fcff repeat-x fixed;
   background-size: auto 100%;
 }
 
@@ -32,12 +32,76 @@ a {
   color: rgb(54, 54, 54);
 }
 
+a:hover {
+  color: #ffa2bcff;
+}
+
 .logo {
   width: 18vw;
 }
 
-footer {
+h1 {
+  font-family: 'Moirai One';
+  color: white;
+  text-shadow:
+    7px 7px 5px #ffa2bcff,
+    -7px 7px 5px #ffff7bff,
+    -7px -7px 5px #73d3ebff,
+    7px -7px 5px #ffff7bff;
+  animation: glow_movement--text 3s linear infinite;
+}
+
+
+@keyframes glow_movement--text {
+  25%{
+    text-shadow:
+    7px 7px 5px #91fa9cff,
+    -7px 7px 5px #ffa2bcff,
+    -7px -7px 5px #ffff7bff,
+    7px -7px 5px #73d3ebff;
+  }
+  50%{
+    text-shadow:
+    7px 7px 5px #73d3ebff,
+    -7px 7px 5px #91fa9cff,
+    -7px -7px 5px #ffa2bcff,
+    7px -7px 5px #ffff7bff;
+  }
+  75%{
+    text-shadow:
+    7px 7px 5px #ffff7bff,
+    -7px 7px 5px #73d3ebff,
+    -7px -7px 5px #91fa9cff,
+    7px -7px 5px #ffa2bcff;
+  }
+  100%{
+    text-shadow:
+    7px 7px 5px #ffa2bcff,
+    -7px 7px 5px #ffff7bff,
+    -7px -7px 5px #73d3ebff,
+    7px -7px 5px #91fa9cff;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  margin-top: 2vw;
+  background: rgba(248, 248, 255, 0.541);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+footer,
+.footer_text {
   position: fixed;
   bottom: 0;
   color: rgb(54, 54, 54);
+  font-size: 20px;
 }

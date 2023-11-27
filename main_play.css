@@ -1,0 +1,30 @@
+.pa {
+  z-index: -1;
+  top: 50px;
+  position: fixed;
+  bottom: 0;
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr ;
+  margin: 0 0 0 2vw;
+  align-items: flex-end;
+  min-width: 1200px;
+  overflow-y: clip;
+}
+
+.store {
+  display: flex;
+  align-items: flex-end;
+  max-width: 100%;
+}
+
+.ice_cream {
+  padding-bottom: 3vh;
+}
+
+.pet_store {
+  margin-bottom: -1vh;
+}
+
+h1 {
+  font-size: 12vw;
+}
